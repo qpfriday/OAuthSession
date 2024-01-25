@@ -1,0 +1,23 @@
+package _01_Operator1;
+
+public class _07_ConditionalOperator {
+    public static void main(String[] args) {
+
+        // #1. 삼항연산자
+        int value1 = (3 > 5) ? 6 : 9;
+        System.out.println(value1);
+
+        int value2 = (5 > 3) ? 10 : 20;
+        System.out.println(value2);
+
+        int value3 = 3;
+        System.out.println((value3 % 2 == 0) ? "짝수" : "홀수");
+
+        // cf. if-else 문으로 변환
+        if(value3 % 2 == 0) {
+            System.out.println("짝수");
+        } else {
+            System.out.println("홀수");
+        }
+    }
+}

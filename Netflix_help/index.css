@@ -1,0 +1,232 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none
+}
+a {
+    color: black;
+}
+.header-container {
+    height: 70px;
+    margin: 0;
+    padding: 0 7px;
+    box-sizing: border-box;
+    border: solid lightgray;
+    border-width: 0 0 1px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    width: 300px;
+    align-items: center;
+    position: relative;
+}
+
+.help-center-logo {
+    font-size: 19px;
+    padding-left: 115px;
+}
+
+
+a.netflix-logo {
+    text-decoration: none;
+
+}
+
+a.profile-btn {
+    text-decoration: none;
+    font-size: 19px;
+}
+
+.netflix-logo-img {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+}
+
+a.help-center-logo {
+    text-decoration-line: none;
+    margin: 0 0 0 20px;
+    line-height : 70px;
+}
+
+.action-container {
+    align-items: center;
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+img.down-arrow-red {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    margin-top: -10px;
+}
+
+ul.dropdown-menu {
+    display: none;
+}
+
+.profile-btn {
+    padding-right: 40px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffffff;
+}
+
+.search-container {
+    height: 800px;
+    padding: 50px 10px 50px 10px;
+    position: relative;
+}
+.search-intro-wrapper {
+    width: 600px;
+    margin: 250px auto 250px auto;
+}
+h1.intro {
+    font-size: 40px;
+}
+#search-input {
+    width: 592px;
+    height: 42px;
+    border: none;
+    padding: 9px 16px 9px 52px;
+}
+.search-control-wrapper {
+    border-radius: 4px;
+    border: 2px solid transparent;
+    background-image: linear-gradient(#fff, #fff), linear-gradient(to right, #E50C17 , #5C79F1);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.search-control {
+display: none;
+}
+.form-control {
+    font-size: 16px;
+}
+.explore-topics {
+    font-size: 16px;
+    margin: 0 auto 16px;
+    padding: 16px;
+}
+main {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.categories {
+    text-align: left;
+    padding: 0 0 0 0 ;
+    margin-bottom: 40px;
+}
+
+.subcategories {
+    padding: 0 0 0 0 ;
+
+}
+
+div.category-card {
+    width: 600px;
+    font-weight: bold;
+    font-size: 18px;
+    border-style: solid ;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: lightgray;
+    margin: 0 auto 16px auto;
+}
+details summary {
+    padding: 0 10px;
+    height: 35px;
+    line-height: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+details summary::marker {
+    font-size: 0;
+}
+
+.bar-title {
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+
+.btn-primary {
+    font-size: 18px;
+    text-decoration-line: none;
+    color: #fafafa;
+    padding: 20px 100px 20px 100px;
+    background-color: black;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 100px;
+}
+
+.quick-links {
+    width: 600px;
+    text-align: left;
+    margin: 0 auto 16px auto;
+}
+
+h3.quick-links-list {
+    border: solid lightgray;
+    border-width: 0 0 1px;
+}
+
+li.quick-link {
+    font-size: 17px;
+    font-weight: bold;
+    height: 40px;
+    padding: 6px 0 6px;
+    border: solid lightgray;
+    border-width: 0 0 1px;
+    position: relative;
+}
+
+li.quick-link > a {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+}
+
+ul.quick-links-list {
+    padding: 6px 0 6px;
+}
+
+footer {
+    height: 300px;
+    background-color: #fafafa;
+}
+
+.footer-container {
+    margin: 0 70px 0 70px;
+}
+
+ul.footer-links {
+    font-size: 15px;
+    padding: 100px 0 0 0;
+}
+
+
+li.footer-link {
+    padding-bottom: 10px;
+    color: darkgray;
+
+}

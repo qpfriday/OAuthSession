@@ -1,13 +1,20 @@
-html{
+html, body {
     margin: 0;
     padding: 0;
 }
+
+/* List styles */
 ul {
-    list-style: none
+    list-style: none;
 }
+
+/* Link styles */
 a {
     color: black;
+    text-decoration: none;
 }
+
+/* Header styles */
 .header-container {
     height: 70px;
     margin: 0;
@@ -15,7 +22,6 @@ a {
     box-sizing: border-box;
     border: solid lightgray;
     border-width: 0 0 1px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,10 +38,8 @@ a {
     padding-left: 115px;
 }
 
-
 a.netflix-logo {
     text-decoration: none;
-
 }
 
 a.profile-btn {
@@ -52,7 +56,7 @@ a.profile-btn {
 a.help-center-logo {
     text-decoration-line: none;
     margin: 0 0 0 20px;
-    line-height : 70px;
+    line-height: 70px;
 }
 
 .action-container {
@@ -60,7 +64,7 @@ a.help-center-logo {
     position: relative;
 }
 
-.dropdown-menu {
+.dropdown-menu, ul.dropdown-menu {
     display: none;
 }
 
@@ -71,14 +75,11 @@ img.down-arrow-red {
     margin-top: -10px;
 }
 
-ul.dropdown-menu {
-    display: none;
-}
-
 .profile-btn {
     padding-right: 40px;
 }
 
+/* Body and Header styles */
 body {
     margin: 0;
     padding: 0;
@@ -88,43 +89,52 @@ header {
     background-color: #ffffff;
 }
 
+/* Search container styles */
 .search-container {
     height: 800px;
     padding: 50px 10px 50px 10px;
     position: relative;
 }
+
 .search-intro-wrapper {
     width: 600px;
     margin: 250px auto 250px auto;
 }
+
 h1.intro {
     font-size: 40px;
 }
+
 #search-input {
     width: 592px;
     height: 42px;
     border: none;
     padding: 9px 16px 9px 52px;
 }
+
 .search-control-wrapper {
     border-radius: 4px;
     border: 2px solid transparent;
-    background-image: linear-gradient(#fff, #fff), linear-gradient(to right, #E50C17 , #5C79F1);
+    background-image: linear-gradient(#fff, #fff), linear-gradient(to right, #E50C17, #5C79F1);
     background-origin: border-box;
     background-clip: content-box, border-box;
 }
 
 .search-control {
-display: none;
+    display: none;
 }
+
 .form-control {
     font-size: 16px;
 }
+
 .explore-topics {
     font-size: 16px;
     margin: 0 auto 16px;
     padding: 16px;
 }
+
+/* Main content styles */
 main {
     background-color: #ffffff;
     text-align: center;
@@ -132,25 +142,25 @@ main {
 
 .categories {
     text-align: left;
-    padding: 0 0 0 0 ;
+    padding: 0 0 0 0;
     margin-bottom: 40px;
 }
 
-.subcategories {
-    padding: 0 0 0 0 ;
-
+.subcategories, div.category-card {
+    padding: 0;
 }
 
 div.category-card {
     width: 600px;
     font-weight: bold;
     font-size: 18px;
-    border-style: solid ;
+    border-style: solid;
     border-radius: 10px;
     border-width: 1px;
     border-color: lightgray;
     margin: 0 auto 16px auto;
 }
+
 details summary {
     padding: 0 10px;
     height: 35px;
@@ -210,6 +220,7 @@ ul.quick-links-list {
     padding: 6px 0 6px;
 }
 
+/* Footer styles */
 footer {
     height: 300px;
     background-color: #fafafa;
@@ -224,9 +235,7 @@ ul.footer-links {
     padding: 100px 0 0 0;
 }
 
-
 li.footer-link {
     padding-bottom: 10px;
     color: darkgray;
-
 }

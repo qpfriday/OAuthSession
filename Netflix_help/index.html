@@ -64,6 +64,7 @@
                             <div class="search-form-container">
                                 <div id="search-placeholder">
                                     <div class="fixed-search-bar-wrapper"
+                                         id="fixed-search-intro"
                                          style="height: auto">
                                         <form action="/ko/search"
                                               method="GET"
@@ -460,8 +461,18 @@
         </footer>
     </body>
     <script>
-        function open_profile() {
-            document.getElementsByClassName("dropdown-menu").style.display = 'block';
-        }
+        window.onscroll = function() {
+            var searchBar = document.getElementById("fixed-search-intro");
+
+            var triggerPosition = 490;
+
+            var offset = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (offset > triggerPosition) {
+                searchBar.classList.add("fixed-search-bar-wrapper");
+            } else {
+                searchBar.classList.remove("fixed-search-bar-wrapper");
+            }
+        };
     </script>
 </html>

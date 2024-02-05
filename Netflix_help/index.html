@@ -64,8 +64,7 @@
                             <div class="search-form-container">
                                 <div id="search-placeholder">
                                     <div class="fixed-search-bar-wrapper"
-                                         id="fixed-search-intro"
-                                         style="height: auto">
+                                         id="fixed-search-intro">
                                         <form action="/ko/search"
                                               method="GET"
                                               class style="top: auto">
@@ -134,51 +133,64 @@
                     <div id="categories-placeholder">
                         <div class="categories">
                             <div class="category-card">
-                                <div class="category-account-billing">
+                                <div class="category-card-name">
                                     <img width="24"
                                          height="24"
                                          viewBox="0 0 24 24"
                                          src="./assets/account-billing-logo.png">
-                                    </img>
                                     <strong class="category-name">계정 및 결제</strong>
                                 </div>
-                                <ul class="subcategories">
-                                    <details class="subcategory">
-                                        <summary class="subcategory-header">
-                                            <strong class="subcategory-name">계정 설정</strong>
-                                            <img viewBox="0 0 24 24"
-                                                 src="./assets/down-arrow.png">
-                                        </summary>
-                                        <ul class="articles-list">
-                                            <li class="article-item">
+                                <details class="subcategory">
+                                    <summary class="subcategory-header">
+                                        <strong class="subcategory-name">계정 설정</strong>
+                                        <img viewBox="0 0 24 24"
+                                             src="./assets/down-arrow.png">
+                                    </summary>
+                                    <ul class="articles-list">
+                                        <li class="article-item">
+                                            <a href="#">
                                                 멤버십 변경 방법
-                                            </li>
-                                            <li class="article-item">
+                                            </a>
+                                        </li>
+                                        <li class="article-item">
+                                            <a href="#">
                                                 넷플릭스 해지 방법
-                                            </li>
-                                            <li class="article-item">
+                                            </a>
+                                        </li>
+                                        <li class="article-item">
+                                            <a href="#">
                                                 비밀번호를 변경 또는 재설정하는 방법
-                                            </li>
-                                        </ul>
-                                    </details> <!--open 할 때 이벤트 만들기-->
-                                </ul>
-                                <ul class="subcategories">
-                                    <details class="subcategory">
-                                        <summary class="subcategory-header">
-                                            <strong class="subcategory-name">넷플릭스 결제</strong>
-                                            <img viewBox="0 0 24 24"
-                                                 src="./assets/down-arrow.png">
-                                        </summary>
-                                        <ul class="articles-list">
-                                            <li class="article-item"></li>
-                                            <li class="article-item"></li>
-                                            <li class="article-item"></li>
-                                        </ul>
-                                    </details> <!--open 할 때 이벤트 만들기-->
-                                </ul>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </details> <!--open 할 때 이벤트 만들기-->
+                                <details class="subcategory">
+                                    <summary class="subcategory-header">
+                                        <strong class="subcategory-name">넷플릭스 결제</strong>
+                                        <img viewBox="0 0 24 24"
+                                             src="./assets/down-arrow.png">
+                                    </summary>
+                                    <ul class="articles-list">
+                                        <li class="article-item">
+                                            <a href="#">
+                                                예시 링크
+                                            </a>
+                                        </li>
+                                        <li class="article-item">
+                                            <a href="#">
+                                                예시 링크
+                                            </a>
+                                        </li>
+                                        <li class="article-item">
+                                            <a href="#">
+                                                예시 링크
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </details> <!--open 할 때 이벤트 만들기-->
                             </div> <!-- 계정 및 결제 -->
                             <div class="category-card">
-                                <div class="category-fix-problem">
+                                <div class="category-card-name">
                                     <img width="24"
                                          height="24"
                                          viewBox="0 0 24 24"
@@ -187,65 +199,105 @@
                                     </img>
                                     <strong class="category-name">문제 해결</strong>
                                 </div>
-                                <ul class="subcategories">
-                                    <details class="subcategory">
-                                        <summary class="subcategory-header">
-                                            <strong class="subcategory-name">계정 문제</strong>
-                                            <img viewBox="0 0 24 24"
-                                                 src="./assets/down-arrow.png">
-                                        </summary>
-                                        <ul class="articles-list">
-                                            <li class="article-item"></li>
-                                            <li class="article-item"></li>
-                                            <li class="article-item"></li>
-                                        </ul>
-                                    </details> <!--open 할 때 이벤트 만들기-->
-                                </ul>
-                                <ul class="subcategories">
-                                    <details class="subcategory">
-                                        <summary class="subcategory-header">
-                                            <strong class="subcategory-name">결제 문제</strong>
-                                            <img viewBox="0 0 24 24"
-                                                 src="./assets/down-arrow.png">
-                                        </summary>
-                                        <ul class="articles-list">
-                                            <li class="article-item"></li>
-                                            <li class="article-item"></li>
-                                            <li class="article-item"></li>
-                                        </ul>
-                                    </details> <!--open 할 때 이벤트 만들기-->
-                                </ul>
-                                <ul class="subcategories">
-                                    <details class="subcategory">
-                                        <summary class="subcategory-header">
-                                            <strong class="subcategory-name">오류 코드</strong>
-                                            <img viewBox="0 0 24 24"
-                                                 src="./assets/down-arrow.png">
-                                        </summary>
-                                        <ul class="articles-list">
-                                            <li class="article-item"></li>
-                                            <li class="article-item"></li>
-                                            <li class="article-item"></li>
-                                        </ul>
-                                    </details> <!--open 할 때 이벤트 만들기-->
-                                </ul>
-                                <ul class="subcategories">
-                                    <details class="subcategory">
-                                        <summary class="subcategory-header">
-                                            <strong class="subcategory-name">시청 관련 문제</strong>
-                                            <img viewBox="0 0 24 24"
-                                                 src="./assets/down-arrow.png">
-                                        </summary>
-                                        <ul class="articles-list">
-                                            <li class="article-item"></li>
-                                            <li class="article-item"></li>
-                                            <li class="article-item"></li>
-                                        </ul>
-                                    </details> <!--open 할 때 이벤트 만들기-->
-                                </ul>
+                                <details class="subcategory">
+                                    <summary class="subcategory-header">
+                                        <strong class="subcategory-name">계정 문제</strong>
+                                        <img viewBox="0 0 24 24"
+                                             src="./assets/down-arrow.png">
+                                    </summary>
+                                    <ul class="articles-list">
+                                        <li class="article-item">
+                                            <a href="#">
+                                                예시 링크
+                                            </a>
+                                        </li>
+                                        <li class="article-item">
+                                            <a href="#">
+                                                예시 링크
+                                            </a>
+                                        </li>
+                                        <li class="article-item">
+                                            <a href="#">
+                                                예시 링크
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </details>
+                                <details class="subcategory">
+                                    <summary class="subcategory-header">
+                                        <strong class="subcategory-name">결제 문제</strong>
+                                        <img viewBox="0 0 24 24"
+                                             src="./assets/down-arrow.png">
+                                    </summary>
+                                    <ul class="articles-list">
+                                        <li class="article-item">
+                                            <a href="#">
+                                                예시 링크
+                                            </a>
+                                        </li>
+                                        <li class="article-item">
+                                            <a href="#">
+                                                예시 링크
+                                            </a>
+                                        </li>
+                                        <li class="article-item">
+                                            <a href="#">
+                                                예시 링크
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </details>
+                                <details class="subcategory">
+                                    <summary class="subcategory-header">
+                                        <strong class="subcategory-name">오류 코드</strong>
+                                        <img viewBox="0 0 24 24"
+                                             src="./assets/down-arrow.png">
+                                    </summary>
+                                    <ul class="articles-list">
+                                        <li class="article-item">
+                                            <a href="#">
+                                                예시 링크
+                                            </a>
+                                        </li>
+                                        <li class="article-item">
+                                            <a href="#">
+                                                예시 링크
+                                            </a>
+                                        </li>
+                                        <li class="article-item">
+                                            <a href="#">
+                                                예시 링크
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </details>
+                                <details class="subcategory">
+                                    <summary class="subcategory-header">
+                                        <strong class="subcategory-name">시청 관련 문제</strong>
+                                        <img viewBox="0 0 24 24"
+                                             src="./assets/down-arrow.png">
+                                    </summary>
+                                    <ul class="articles-list">
+                                        <li class="article-item">
+                                            <a href="#">
+                                                예시 링크
+                                            </a>
+                                        </li>
+                                        <li class="article-item">
+                                            <a href="#">
+                                                예시 링크
+                                            </a>
+                                        </li>
+                                        <li class="article-item">
+                                            <a href="#">
+                                                예시 링크
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </details>
                             </div> <!-- 문제해결 -->
                             <div class="category-card">
-                                <div class="category-watching-playing">
+                                <div class="category-card-name">
                                     <img width="24"
                                          height="24"
                                          viewBox="0 0 24 24"
@@ -254,79 +306,129 @@
                                     </img>
                                     <strong class="category-name">시청 및 플레이</strong>
                                 </div>
-                                <ul class="subcategories">
-                                    <details class="subcategory">
-                                        <summary class="subcategory-header">
-                                            <strong class="subcategory-name">프로필</strong>
-                                            <img viewBox="0 0 24 24"
-                                                 src="./assets/down-arrow.png">
-                                        </summary>
-                                        <ul class="articles-list">
-                                            <li class="article-item"></li>
-                                            <li class="article-item"></li>
-                                            <li class="article-item"></li>
-                                        </ul>
-                                    </details> <!--open 할 때 이벤트 만들기-->
-                                </ul>
-                                <ul class="subcategories">
-                                    <details class="subcategory">
-                                        <summary class="subcategory-header">
-                                            <strong class="subcategory-name">기능 및 설정</strong>
-                                            <img viewBox="0 0 24 24"
-                                                 src="./assets/down-arrow.png">
-                                        </summary>
-                                        <ul class="articles-list">
-                                            <li class="article-item"></li>
-                                            <li class="article-item"></li>
-                                            <li class="article-item"></li>
-                                        </ul>
-                                    </details> <!--open 할 때 이벤트 만들기-->
-                                </ul>
-                                <ul class="subcategories">
-                                    <details class="subcategory">
-                                        <summary class="subcategory-header">
-                                            <strong class="subcategory-name">시리즈 및 영화</strong>
-                                            <img viewBox="0 0 24 24"
-                                                 src="./assets/down-arrow.png">
-                                        </summary>
-                                        <ul class="articles-list">
-                                            <li class="article-item"></li>
-                                            <li class="article-item"></li>
-                                            <li class="article-item"></li>
-                                        </ul>
-                                    </details> <!--open 할 때 이벤트 만들기-->
-                                </ul>
-                                <ul class="subcategories">
-                                    <details class="subcategory">
-                                        <summary class="subcategory-header">
-                                            <strong class="subcategory-name">자녀 보호 설정</strong>
-                                            <img viewBox="0 0 24 24"
-                                                 src="./assets/down-arrow.png">
-                                        </summary>
-                                        <ul class="articles-list">
-                                            <li class="article-item"></li>
-                                            <li class="article-item"></li>
-                                            <li class="article-item"></li>
-                                        </ul>
-                                    </details> <!--open 할 때 이벤트 만들기-->
-                                </ul>
-                                <ul class="subcategories">
-                                    <details class="subcategory">
-                                        <summary class="subcategory-header">
-                                            <strong class="subcategory-name">게임</strong>
-                                            <img viewBox="0 0 24 24"
-                                                 src="./assets/down-arrow.png">
-                                        </summary>
-                                        <ul class="articles-list">
-                                            <li class="article-item"></li>
-                                            <li class="article-item"></li>
-                                            <li class="article-item"></li>
-                                        </ul>
-                                    </details> <!--open 할 때 이벤트 만들기-->
-                                </ul>
+                                <details class="subcategory">
+                                    <summary class="subcategory-header">
+                                        <strong class="subcategory-name">프로필</strong>
+                                        <img viewBox="0 0 24 24"
+                                             src="./assets/down-arrow.png">
+                                    </summary>
+                                    <ul class="articles-list">
+                                        <li class="article-item">
+                                            <a href="#">
+                                                예시 링크
+                                            </a>
+                                        </li>
+                                        <li class="article-item">
+                                            <a href="#">
+                                                예시 링크
+                                            </a>
+                                        </li>
+                                        <li class="article-item">
+                                            <a href="#">
+                                                예시 링크
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </details>
+                                <details class="subcategory">
+                                    <summary class="subcategory-header">
+                                        <strong class="subcategory-name">기능 및 설정</strong>
+                                        <img viewBox="0 0 24 24"
+                                             src="./assets/down-arrow.png">
+                                    </summary>
+                                    <ul class="articles-list">
+                                        <li class="article-item">
+                                            <a href="#">
+                                                예시 링크
+                                            </a>
+                                        </li>
+                                        <li class="article-item">
+                                            <a href="#">
+                                                예시 링크
+                                            </a>
+                                        </li>
+                                        <li class="article-item">
+                                            <a href="#">
+                                                예시 링크
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </details>
+                                <details class="subcategory">
+                                    <summary class="subcategory-header">
+                                        <strong class="subcategory-name">시리즈 및 영화</strong>
+                                        <img viewBox="0 0 24 24"
+                                             src="./assets/down-arrow.png">
+                                    </summary>
+                                    <ul class="articles-list">
+                                        <li class="article-item">
+                                            <a href="#">
+                                                예시 링크
+                                            </a>
+                                        </li>
+                                        <li class="article-item">
+                                            <a href="#">
+                                                예시 링크
+                                            </a>
+                                        </li>
+                                        <li class="article-item">
+                                            <a href="#">
+                                                예시 링크
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </details>
+                                <details class="subcategory">
+                                    <summary class="subcategory-header">
+                                        <strong class="subcategory-name">자녀 보호 설정</strong>
+                                        <img viewBox="0 0 24 24"
+                                             src="./assets/down-arrow.png">
+                                    </summary>
+                                    <ul class="articles-list">
+                                        <li class="article-item">
+                                            <a href="#">
+                                                예시 링크
+                                            </a>
+                                        </li>
+                                        <li class="article-item">
+                                            <a href="#">
+                                                예시 링크
+                                            </a>
+                                        </li>
+                                        <li class="article-item">
+                                            <a href="#">
+                                                예시 링크
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </details>
+                                <details class="subcategory">
+                                    <summary class="subcategory-header">
+                                        <strong class="subcategory-name">게임</strong>
+                                        <img viewBox="0 0 24 24"
+                                             src="./assets/down-arrow.png">
+                                    </summary>
+                                    <ul class="articles-list">
+                                        <li class="article-item">
+                                            <a href="#">
+                                                예시 링크
+                                            </a>
+                                        </li>
+                                        <li class="article-item">
+                                            <a href="#">
+                                                예시 링크
+                                            </a>
+                                        </li>
+                                        <li class="article-item">
+                                            <a href="#">
+                                                예시 링크
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </details>
                             </div> <!-- 시청 및 플레이 -->
                             <div class="category-card">
-                                <div class="category-getting-started">
+                                <div class="category-card-name">
                                     <img width="24"
                                          height="24"
                                          viewBox="0 0 24 24"
@@ -335,34 +437,54 @@
                                     </img>
                                     <strong class="category-name">가입 절차</strong>
                                 </div>
-                                <ul class="subcategories">
-                                    <details class="subcategory">
-                                        <summary class="subcategory-header">
-                                            <strong class="subcategory-name">넷플릭스 가입</strong>
-                                            <img viewBox="0 0 24 24"
-                                                 src="./assets/down-arrow.png">
-                                        </summary>
-                                        <ul class="articles-list">
-                                            <li class="article-item"></li>
-                                            <li class="article-item"></li>
-                                            <li class="article-item"></li>
-                                        </ul>
-                                    </details> <!--open 할 때 이벤트 만들기-->
-                                </ul>
-                                <ul class="subcategories">
-                                    <details class="subcategory">
-                                        <summary class="subcategory-header">
-                                            <strong class="subcategory-name">디바이스 설정</strong>
-                                            <img viewBox="0 0 24 24"
-                                                 src="./assets/down-arrow.png">
-                                        </summary>
-                                        <ul class="articles-list">
-                                            <li class="article-item"></li>
-                                            <li class="article-item"></li>
-                                            <li class="article-item"></li>
-                                        </ul>
-                                    </details> <!--open 할 때 이벤트 만들기-->
-                                </ul>
+                                <details class="subcategory">
+                                    <summary class="subcategory-header">
+                                        <strong class="subcategory-name">넷플릭스 가입</strong>
+                                        <img viewBox="0 0 24 24"
+                                             src="./assets/down-arrow.png">
+                                    </summary>
+                                    <ul class="articles-list">
+                                        <li class="article-item">
+                                            <a href="#">
+                                                예시 링크
+                                            </a>
+                                        </li>
+                                        <li class="article-item">
+                                            <a href="#">
+                                                예시 링크
+                                            </a>
+                                        </li>
+                                        <li class="article-item">
+                                            <a href="#">
+                                                예시 링크
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </details>
+                                <details class="subcategory">
+                                    <summary class="subcategory-header">
+                                        <strong class="subcategory-name">디바이스 설정</strong>
+                                        <img viewBox="0 0 24 24"
+                                             src="./assets/down-arrow.png">
+                                    </summary>
+                                    <ul class="articles-list">
+                                        <li class="article-item">
+                                            <a href="#">
+                                                예시 링크
+                                            </a>
+                                        </li>
+                                        <li class="article-item">
+                                            <a href="#">
+                                                예시 링크
+                                            </a>
+                                        </li>
+                                        <li class="article-item">
+                                            <a href="#">
+                                                예시 링크
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </details>
                             </div> <!-- 가입 절차 -->
                         </div>
                     </div>
@@ -464,7 +586,7 @@
         window.onscroll = function() {
             var searchBar = document.getElementById("fixed-search-intro");
 
-            var triggerPosition = 490;
+            var triggerPosition = 450;
 
             var offset = window.pageYOffset || document.documentElement.scrollTop;
 
@@ -473,6 +595,28 @@
             } else {
                 searchBar.classList.remove("fixed-search-bar-wrapper");
             }
+            // 수정된 부분 끝
         };
+
+        // 페이지가 열릴 때 초기에 fixed-search-bar-wrapper 클래스 제거
+        document.addEventListener("DOMContentLoaded", function() {
+            var searchBar = document.getElementById("fixed-search-intro");
+            searchBar.classList.remove("fixed-search-bar-wrapper");
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var exploreTopicsLink = document.getElementById('explore-topics-link');
+            var targetSection = document.getElementById('topic-section');
+
+            exploreTopicsLink.addEventListener('click', function (event) {
+                event.preventDefault();
+                var targetOffset = targetSection.getBoundingClientRect().top - 170;
+
+                window.scrollBy({
+                    top: targetOffset,
+                    behavior: 'smooth'
+                });
+            });
+        });
     </script>
 </html>

@@ -15,13 +15,17 @@ a {
 }
 
 /* Header styles */
-.header-container {
-    height: 70px;
-    margin: 0;
-    padding: 0 7px;
+header {
+
     box-sizing: border-box;
     border: solid lightgray;
     border-width: 0 0 1px;
+}
+.header-container {
+    width: 1200px;
+    height: 70px;
+    margin: auto;
+    padding: 0 7px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,8 +68,21 @@ a.help-center-logo {
     position: relative;
 }
 
-.dropdown-menu, ul.dropdown-menu {
+
+.dropdown-menu {
+    width: 220px;
     display: none;
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid lightgray ;
+    box-shadow: 5px 1px 20px 1px lightgray;
+    padding: 10px 16px;
+    z-index: 10;
+    font-size: 17px;
+}
+.dropdown-menu > li {
+    padding: 10px 0 10px;
 }
 
 img.down-arrow-red {
@@ -103,6 +120,7 @@ header {
 
 h1.intro {
     font-size: 40px;
+    margin-bottom: 50px;
 }
 
 #search-input {
@@ -162,7 +180,7 @@ h1.intro {
 /* Main content styles */
 main {
     text-align: center;
-    background: linear-gradient(to bottom, #f9f9f9, #ffffff);
+    background: linear-gradient(to bottom, #f6f7ff, #ffffff);
 }
 
 .categories {

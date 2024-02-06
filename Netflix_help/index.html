@@ -2,6 +2,7 @@
     <head>
         <meta charset="utf-8">
         <title>넷플릭스 고객 센터</title>
+        <link rel="icon" href="assets/netflix-icon.png"/>
         <link href="index.css" rel="stylesheet" />
     </head>
     <body>
@@ -27,14 +28,15 @@
                     <ul class="navbar">
                         <li class="dropdown">
                             <a class="profile-btn"
-                               href="#">
+                               href="#"
+                               onclick="toggleDropdown()">
                                 USER
+                                <img
+                                        class="down-arrow-red"
+                                        src="./assets/down-arrow-red.png"
+                                        type="button"
+                                        onclick="open_profile()">
                             </a>
-                            <img
-                                 class="down-arrow-red"
-                                 src="./assets/down-arrow-red.png"
-                                 type="button"
-                                 onclick="open_profile()">
                             <ul class="dropdown-menu">
                                 <li>
                                     <a class="account-link"
@@ -595,10 +597,8 @@
             } else {
                 searchBar.classList.remove("fixed-search-bar-wrapper");
             }
-            // 수정된 부분 끝
         };
 
-        // 페이지가 열릴 때 초기에 fixed-search-bar-wrapper 클래스 제거
         document.addEventListener("DOMContentLoaded", function() {
             var searchBar = document.getElementById("fixed-search-intro");
             searchBar.classList.remove("fixed-search-bar-wrapper");
@@ -618,5 +618,10 @@
                 });
             });
         });
+
+        function toggleDropdown() {
+            var dropdownMenu = document.querySelector('.dropdown-menu');
+            dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+        }
     </script>
 </html>

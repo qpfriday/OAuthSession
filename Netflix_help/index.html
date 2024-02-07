@@ -604,7 +604,7 @@
             searchBar.classList.remove("fixed-search-bar-wrapper");
         });
 
-        document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function() {
             var exploreTopicsLink = document.getElementById('explore-topics-link');
             var targetSection = document.getElementById('topic-section');
 
@@ -619,9 +619,26 @@
             });
         });
 
+        document.addEventListener("DOMContentLoaded", function() {
+
+            const detailsElements = document.querySelectorAll('details');
+
+            detailsElements.forEach(detailsElement => {
+                detailsElement.addEventListener('click', function() {
+                    detailsElements.forEach(otherDetailsElement => {
+                        if (otherDetailsElement !== detailsElement && otherDetailsElement.open) {
+                            otherDetailsElement.open = false;
+                        }
+                    });
+                });
+            });
+        });
+
+
         function toggleDropdown() {
             var dropdownMenu = document.querySelector('.dropdown-menu');
             dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
         }
+
     </script>
 </html>
